@@ -1,0 +1,78 @@
+/* Créneaux */
+
+.battlements {
+    display: flex;
+    flex-flow: row nowrap;
+    border-collapse: collapse;
+    text-align: center;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 200%;
+}
+
+.battlement {
+    background-color: var(--platinum);
+    width: 5%;
+    height: 20px;
+}
+
+.battlement:nth-child(odd) {
+    background: url(../img/brick-white-wall.jpg);
+    background-blend-mode: color-burn;
+    box-shadow: 3px 3px 5px var(--gold-satin);
+    opacity: 0.5;
+}
+
+.battlement:nth-child(even) {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 780px) {
+
+    .battlement {
+        width: 10%;
+        height: 50px;
+    }
+    
+}
+
+/* <section class="battlements">
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+    <div class="battlement"></div>
+</section> */
+
+/* <div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div>
+<div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div>
+<div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div>
+<div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div>
+<div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div><div class="battlement"></div> */

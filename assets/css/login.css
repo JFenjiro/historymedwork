@@ -1,0 +1,65 @@
+/* Inscription-connexion */
+
+.form-border {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 16px auto;
+    width: 90%;
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px auto;
+}
+
+.form-border fieldset {
+    border: 5px solid;
+    border-color: #243010;
+    border-radius: 20px;
+    background-color: #cca43b;
+    margin: 8px auto;
+    width: 80%;
+}
+
+.form-border legend {
+    background-color: #243010;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 16px;
+    text-align: center;
+    width: 70%;
+}
+
+.form-border input {
+    width: 70%;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.form-border label {
+    color: #243010;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+.form-register {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-register input[type="checkbox"] {
+    margin: 8px;
+}

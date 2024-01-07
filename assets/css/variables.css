@@ -1,0 +1,65 @@
+/* Variables */
+
+:root {
+    /* Graphic chart historymedwork */
+    --gold-satin: #cca43b;
+    --green-pakistan: #243010;
+    --green-moss: #9c9f35;
+    --platinum: #e5e5e5;
+    --white: #ffffff;
+
+    /* Black colors */
+    --black-light: #111111;
+    --black: #000000;
+    --black-night: #131515;
+    --black-rich: #001514;
+
+    /* Grey White colors */
+    --grey: #dddddd;
+    --grey-wenge: #695968;
+    --ash-gray: #b6c8a9;
+    --grey-nyanza: #c8ead3;
+    --grey-platinum: #cedada;
+    --grey-jet: #2b2c28;
+    --cool-gray: #7d84b2;
+    --white-snow: #fffafb;
+    --white-ivory: #f9f9ed;
+    --white-cream: #f3ffb9;
+
+    /* Red colors */
+    --red: #ff0000;
+    --red-chocolate-cosmos: #6c0e23;
+    --red-fire-engine: #c42021;
+    
+    /* Blue colors */
+    --blue-turquoise: #55d6be;
+    --blue-aquamarine: #acfcd9;
+    --blue-nyanza: #cfffe5;
+    --blue-tiffany: #7de2d1;
+    --blue-vista: #8e9dcc;
+    --blue-lavender-web: #d9dbf1;
+
+    /* Green colors */
+    --green-persian: #339989;
+    --green-citron: #c2d076;
+    --green-malachite: #16db65;
+    --green-sea: #058c42;
+    --green-dark: #0d2818;
+    --green-mindaro: #dbf4a7;
+
+    /* Yellow colors */
+    --yellow: #ffff00;
+
+    /* Pink Violet colors */
+    --pink-mimi: #ffe1ea;
+    --pink-crayola: #fc6471;
+    --pink-peach: #ffb997;
+    --pink-coral-light: #f67e7d;
+    --violet-web: #ffa0fd;
+    --purple-pizzazz: #e952de;
+    --purple-eggplant: #74546a;
+    --magenta-quinacridone: #843b62;
+    --purple-tyrian: #561643;
+    --violet-russian: #3c1742;
+    --violet-russian-dark: #0b032d;
+}

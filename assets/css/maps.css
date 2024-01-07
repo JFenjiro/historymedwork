@@ -1,0 +1,108 @@
+/* Fonds de Cartes */
+
+.search-menu-map {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 16px auto;
+    width: 70%;
+}
+
+.select-map {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+}
+
+.select-map fieldset {
+    position: sticky;
+    border: 3px solid;
+    border-radius: 20px;
+    border: 5px solid #243010;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.select-map label {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.select-map select,
+#searchmap1 {
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+}
+
+#continent,
+#region, 
+#searchmap1 {
+    width: 60%;
+    text-transform: uppercase;
+    margin: 24px auto;
+}
+
+.searchmap2 {
+    display: flex;
+    justify-content: center;
+    margin: 8px auto;
+    padding-top: 2%;
+    width: 20%;
+    height: 20%;
+}
+
+.historic-maps {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.historic-maps div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.historic-maps input[type="image"] {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (min-width:780px) {
+    /* Cartes historiques */
+
+    .search-menu-map {
+        width: 25%;
+        margin: 0;
+    }
+
+    .historic-maps {
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 75%;
+    }
+
+    .historic-maps div {
+        width: 30%;
+    }
+
+    .historic-maps input[type="image"] {
+        width: 80%;
+        height: 250px;
+        object-fit: cover;
+    }
+}

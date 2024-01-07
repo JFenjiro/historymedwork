@@ -1,0 +1,34 @@
+/* Boutons */
+
+button {
+    background-color: var(--green-pakistan);
+    color: var(--platinum);
+    font-size: 1.2rem;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+button::first-letter {
+    font-family: "Medieval Scribish";
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 7px 7px var(--platinum);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    color: var(--green-pakistan);
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* Responsive > 780px */
+
+@media screen and (min-width:780px) {
+
+}

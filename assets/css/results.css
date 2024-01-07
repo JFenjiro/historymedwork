@@ -1,0 +1,37 @@
+.results-form,
+.results-fieldset {
+    text-align: justify;
+    margin: 40px auto;
+    width: 95%;
+}
+
+.results-form > fieldset > legend {
+    background-color: var(--green-pakistan);
+    border-radius: 20px;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 16px;
+    text-align: center;
+    width: 80%;
+}
+
+#results {
+    color: var(--green-pakistan);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#results::before {
+    content: 'Chevalier, vos pairs vous ont octroyé le score de ';
+    color: var(--green-pakistan);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width:780px) {
+
+    .results-form {
+        width: 70%;
+    }
+}

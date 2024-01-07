@@ -1,0 +1,443 @@
+/* Tab buttons */
+
+.tabs {
+    border-bottom: 1px solid var(--green-pakistan);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.tablinks {
+    border-top: 2px solid var(--gold-satin);
+    border-left: 2px solid var(--gold-satin);
+    border-right: 2px solid var(--gold-satin);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+}
+
+#first-tab {
+    position: relative;
+    width: 50%;
+    z-index: 2;
+}
+
+#second-tab {
+    opacity: 0.8;
+    position: relative;
+    width: 30%;
+    z-index: 1;
+}
+
+#third-tab {
+    opacity: 0.8;
+    position: relative;
+    width: 30%;
+    z-index: 0;
+}
+
+/* Workspace */
+/* Menu workspace */
+
+#work-space {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#menu-workspace {
+    text-align: center;
+}
+
+#menu-workspace h2 {
+    padding: 24px;
+}
+
+#menu-workspace ul {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 72px auto 72px auto;
+    width: 100%;
+}
+
+#menu-workspace li {
+    width: 100%;
+    margin: 16px auto;
+}
+
+#menu-workspace a > button {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    box-shadow: 3px 5px 5px var(--gold-satin);
+}
+
+#menu-workspace a > button:hover {
+    font-weight: 700;
+    box-shadow: inset 0px 0px 7px 7px var(--platinum);
+}
+
+/* Fichiers produits workspace */
+
+#text-files {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+}
+
+.produced-files,
+.text-editor {
+    background-color: var(--gold-satin);
+    border: 3px solid var(--green-pakistan);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 550px;
+    margin: 16px auto;
+}
+
+.files-produced button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.files-produced img {
+    fill: var(--platinum);
+    width: 30%;
+    height: 50px;
+}
+
+.files-produced p {
+    width: 70%;
+    padding: 8px;
+}
+
+.flex-end {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.flex-end button {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    width: 30%;
+}
+
+/* Editeur de texte workspace */
+
+.text-editor textarea {
+    width: 100%;
+}
+
+/* Table utilisateur */
+
+#user-info {
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 24px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+#user-table, 
+#user-scores {
+    width: 90%;
+}
+
+#user-table table,
+#user-scores table {
+    border: 3px solid var(--platinum);
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin: 16px auto;
+    table-layout: fixed;
+    width: 90%;
+}
+
+#user-table tr,
+#user-scores tr {
+    height: 100px;
+    padding: 16px 0;
+}
+
+#user-table tr:nth-child(odd),
+#user-scores tr:nth-child(odd) {
+    background-color: var(--green-pakistan);
+    color: var(--platinum);
+}
+
+#user-table tr:nth-child(even),
+#user-scores tr:nth-child(even) {
+    background-color: var(--platinum);
+    color: var(--green-pakistan);
+}
+
+#user-table tr:nth-child(odd) a {
+    color: var(--platinum);
+    text-decoration: underline;
+}
+
+#user-table tr:nth-child(odd) a:hover {
+    color: var(--gold-satin);
+    font-size: 1rem;
+}
+
+#user-table tr:nth-child(even) a {
+    color: var(--green-pakistan);
+    text-decoration: underline;
+}
+
+#user-table tr:nth-child(even) a:hover {
+    color: var(--gold-satin);
+    font-size: 1rem;
+}
+
+#user-table th,
+#user-scores th {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#user-table th::first-letter,
+#user-scores th::first-letter {
+    font-family: 'Medieval Scribish';
+}
+
+#user-table td,
+#user-scores td {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Icône utilisateur */
+
+.user-icon,
+.user-icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.profile-icon,
+.profile-icon-2 {
+    background-color: var(--gold-satin);
+    border: 3px solid var(--green-pakistan);
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile-icon {
+    width: 250px;
+    height: 250px;
+}
+
+.profile-icon-2 {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-icon a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.profile-icon img {
+    width: 210px;
+    height: 210px;
+    z-index: 1;
+}
+
+#img-icon {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+/* Formulaire icône utilisateur */
+
+.chose-icon {
+    background-color: var(--gold-satin);
+    border: 3px solid var(--green-pakistan);
+    border-radius: 10px;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    min-height: 30%;
+    z-index: 2;
+}
+
+.close-btn3 {
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.flex-start {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 75%;
+}
+
+.usericon {
+    appearance: none;
+    background-color: var(--platinum);
+    border-radius: 10px; 
+    padding: 8px 8px;
+    width: 80%;
+}
+
+.usericon option {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px auto;
+    height: 32px;
+}
+
+.user-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulaire changement mot de passe et information */
+
+.input-style {
+    border-radius: 10px;
+    margin: 8px 0;
+    padding: 8px;
+    width: 75%;
+}
+
+/* Table des scores */
+
+#user-scores {
+    width: 90%;
+}
+
+/* Responsive > 780px */
+
+@media screen and (min-width:780px) {
+    /* Tab buttons */
+
+    .tabs {
+        justify-content: flex-start;
+    }
+
+    #first-tab {
+        width: 20%;
+        z-index: 1;
+    }
+    
+    #second-tab {
+        width: 10%;
+    }
+
+    #third-tab {
+        width: 10%;
+    }
+
+    /* Workspace */
+
+    #menu-workspace ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #menu-workspace li {
+        width: 50%;
+    }
+
+    #menu-workspace a > button {
+        width: 90%;
+    }
+
+    #text-files {
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .produced-files,
+    .text-editor {
+        width: 40%;
+    }
+
+    .files-produced button {
+        width: 100%;
+    }
+
+    .flex-end {
+        justify-content: flex-end;
+    }
+
+    .flex-end button {
+        margin: 0 8px;
+    }
+
+    /* Table utilisateur */
+
+    #user-table,
+    #user-scores {
+        width: 70%;
+    }
+
+    #user-table th,
+    #user-scores th {
+        font-size: 1.5rem;
+    }
+
+    #user-table td {
+        font-size: 1.2rem;
+    }
+
+    #user-scores td {
+        font-size: 1.6rem;
+    }
+
+    #user-table tr:nth-child(odd) a:hover,
+    #user-table tr:nth-child(even) a:hover {
+        font-size: 1.5rem;
+    }
+
+    /* Icône utilisateur */
+
+    .user-icon {
+        width: 30%;
+    }
+
+    .chose-icon {
+        width: 30%;
+        min-height: 40%;
+    }
+}

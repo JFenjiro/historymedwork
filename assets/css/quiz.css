@@ -1,0 +1,219 @@
+/* Quizz */
+
+.quiz-0 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.select-map2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px;
+    width: 100%;
+}
+
+.select-map2 fieldset {
+    width: 70%;
+}
+
+.select-map2 label {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.select-map2 select {
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid var(--green-pakistan);
+    background-color: var(--platinum);
+}
+
+.quiz-1,
+.quiz-4 {
+    text-align: justify;
+    margin: 40px auto;
+    width: 95%;
+}
+
+.quiz-2,
+.quiz-3 {
+    background: linear-gradient(190deg, var(--gold-satin), var(--platinum), var(--gold-satin));
+    color: var(--green-pakistan);
+    border: 5px solid var(--green-pakistan);
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 16px auto;
+    width: 90%;
+}
+
+.quiz-3 {
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+/* .quiz-4 {
+    display: none;
+} */
+
+form > fieldset {
+    background-color: var(--gold-satin);
+    width: 60%;
+    border: 5px solid;
+    border-color: var(--green-pakistan);
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px var(--white), 4px 4px 6px var(--gold-satin);
+    margin: 16px auto;
+}
+
+.quiz-0 > .quiz-1 > fieldset > legend {
+    background-color: var(--green-pakistan);
+    border-radius: 20px;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 16px;
+    text-align: center;
+    width: 80%;
+}
+
+.select-map2 option {
+    overflow: hidden;
+}
+
+.item-1 {
+    margin: 8px 32px;
+    text-align: justify;
+}
+
+.item-1 label {
+    font-size: 1.2rem;
+}
+
+.item-1 input {
+    margin-left: 16px;
+}
+
+label::first-letter,
+legend::first-letter {
+    font-family: "Medieval Scribish";
+}
+
+/* .steps {
+    color: var(--green-pakistan);
+    font-family: "Medieval Scribish";
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.step1.active {
+    opacity: 1;
+    color: var(--gold-satin);
+} */
+
+#present-quizzes {
+    background: url(../img/Castlelogo_silver.png);
+    background-size: contain;
+    background-color: var(--gold-satin);
+    border: 5px solid var(--green-pakistan);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    text-align: center;
+    width: 90%;
+    min-height: 500px;
+}
+
+#present-quizzes h2 {
+    background-color: var(--gold-satin);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    margin: 24px 0;
+    padding: 0 8px;
+    width: 90%;
+}
+
+#present-quizzes h3 {
+    background-color: var(--gold-satin);
+    background-blend-mode: lighten;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 100%;
+    margin: 16px 0;
+    padding: 8px;
+    width: 90%;
+}
+
+#present-quizzes h3::first-letter {
+    font-family: 'Medieval Scribish';
+}
+
+/* #see-score {
+    display: none;
+} */
+
+@media screen and (min-width:780px) {
+    /* Quiz */
+
+    .quiz-0 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .select-map2 {
+        position: sticky;
+        top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        height: 20%;
+        width: 20%;
+    }
+
+    .select-map2 fieldset {
+        width: 100%;
+    }
+
+    .quiz-1 {
+        width: 70%;
+    }
+
+    .quiz-2 {
+        width: 55%;
+    }
+
+    form > fieldset {
+        position: relative;
+    }
+
+    #present-quizzes {
+        width : 70%;
+    }
+
+    #present-quizzes h2 {
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    #present-quizzes h3 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        line-height: 140%;
+        width: 75%;
+    }
+}

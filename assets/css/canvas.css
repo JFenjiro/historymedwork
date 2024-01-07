@@ -1,0 +1,25 @@
+/* Canvas frise chronologique */
+
+.canvas-frise {
+    min-width: 100%;
+    /* min-height: 100%; */
+}
+
+.canvas-frise > article {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    border: 1px solid #111111;
+    cursor: grab;
+    position: relative;
+    z-index: 0;
+}
+
+#brick-wall {
+    border: 1px solid #ccc;
+    z-index: 0;
+}

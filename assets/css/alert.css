@@ -1,0 +1,26 @@
+/* Alertes */
+
+.alert-success,
+.alert {
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 8px auto;
+}
+
+.alert-success {
+    background-color: var(--green-moss);
+    color: var(--white);
+}
+
+.alert {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+@media screen and (min-width:780px) {
+    .alert-success,
+    .alert {
+        width: 50%;
+    }
+}

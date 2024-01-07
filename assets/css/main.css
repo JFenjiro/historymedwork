@@ -1,0 +1,199 @@
+@import url(reset.css);
+@import url(battlement.css);
+@import url(header-footer.css);
+@import url(variables.css);
+@import url(canvas.css);
+@import url(quiz.css);
+@import url(workspace.css);
+@import url(about.css);
+@import url(maps.css);
+@import url(login.css);
+@import url(buttons.css);
+@import url(alert.css);
+@import url(confettis.css);
+@import url(results.css);
+
+/* Initialisation des fonts */
+@font-face {
+    font-family: 'Medieval Scribish';
+    src: url("../assets/fonts/medieval_scribish/scribish.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../assets/fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../assets/fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../assets/fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Initialisation du body, h1 */
+
+body {
+    background-color: var(--platinum);
+    background-image: url(../img/brick-white-wall.jpg);
+    background-blend-mode: color-burn;
+    background-size: contain; 
+    background-repeat: repeat;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Medieval Scribish';
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--green-pakistan);
+    text-align: center;
+    margin: 32px auto;
+    min-width: 30%;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main-page style */
+
+main {
+    width: 100%;
+    min-height: 740px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2::first-letter {
+    font-family: "Medieval Scribish";
+}
+
+p {
+    font-size: 1.3rem;
+    padding-bottom: 20px; 
+}
+
+p::first-letter {
+    font-family: "Medieval Scribish";
+}
+
+b {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* Accueil */
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 16px auto;
+}
+
+.center-right {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: var(--gold-satin);
+    border: 3px solid var(--green-pakistan);
+    border-radius: 20px;
+    margin: 8px auto;
+    width: 90%;
+}
+
+.text-right {
+    color: var(--green-pakistan);
+    font-family: 'Alegreya';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    padding: 8px;
+    text-decoration: none;
+    width: 90%;
+}
+
+.flex-column {
+    float: none;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* HR */
+
+hr {
+    background-color: var(--green-pakistan);
+    border: 3px solid var(--platinum);
+    border-radius: 50px;
+    margin: 48px auto;
+    padding: 8px;
+    width: 75%;
+}
+
+hr:hover {
+    background: linear-gradient(90deg, var(--green-moss), var(--green-pakistan), var(--green-moss));
+    transform-origin: top center;
+    animation: swing 2s ease infinite;
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Responsive > 780px */
+
+@media screen and (min-width:780px) {
+    
+    .container {
+        justify-content: flex-end;
+        width: 90%;
+    }
+
+    .center-right {
+        align-items: center;
+        width: 40%;
+        margin: 16px;
+    }
+}
